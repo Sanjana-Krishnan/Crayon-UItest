@@ -1,0 +1,332 @@
+/* ...................Initial Page Split................... */
+
+body{
+  font-family: "MetropolisRegular";
+}
+.left{
+  height:100vh;
+  width:65vw;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+}
+
+.right{
+  height:100vh;
+  width:35vw;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  left:65vw;
+}
+
+
+/* .....................Carousel Styling........................ */
+
+.left img{
+  height:100vh;
+  width:100%;
+}
+
+.carousel-indicators li{
+  width:12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+.carousel-indicators .active{
+  width:32px;
+  height: 12px;
+  border-radius: 40%;
+  background-color: #000;
+}
+
+.carousel-inner h5{
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.carousel-inner p{
+  width: 58%;
+  margin:0 auto 10px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* ...........................Right header styling....................... */
+
+
+.mayalogo{
+  width:19%;
+  height:8vh;
+  margin-top:8%;
+  margin-left: 4vw;
+}
+
+.header p{
+  width:80%;
+  margin-top:2vh;
+  margin-left: 4vw;
+  font-size: 16px;
+  color:#1C2C42;
+  font-weight: 400;
+}
+
+
+/* ...........................Right footer styling....................... */
+
+.crayonlogo{
+  display: inline-block;
+  width: 9%;
+  height:5%;
+  margin-left: 4vw;
+  margin-top:80%;
+}
+
+.fp{
+  position: absolute;
+  width:65%;
+  display: inline-block;
+  margin-left: 2%;
+  font-size: 12px;
+  line-height: 18px;
+  color:#575E6B;
+  font-weight: 500;
+  margin-top:80%;
+}
+
+
+
+
+/* ...............................Checkbox styling......................... */
+
+.container{
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border: 1px solid;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: grey;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 3px;
+  top: 1px;
+  width: 4px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* ............................Main body styling............................ */
+
+/* ...................Form1............ */
+
+.login{
+  /* display:none; */
+  position: absolute;
+  margin-left: 4vw;
+  margin-top: 2vh;
+}
+
+.form-label-group{
+  width:27vw;
+  margin: 5% auto;
+}
+
+.form-control{
+  height: 8vh;
+  padding-top: 25px;
+}
+.floatp{
+  margin-top:5px;
+  margin-left: 12px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  color: #575E6B;
+}
+
+#inputEmail::placeholder, #inputPassword::placeholder, #inputEmail2::placeholder {
+  color:rgba(21, 37, 66, 0.3);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.checkbox{
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn-block{
+  position:absolute;
+  right: 1%;
+  width:100px;
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 5%;
+}
+
+.anc1{
+  margin-top: 50px;
+  display:block;
+  color:#516078;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.msg{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #516078;
+}
+
+.anc2{
+  margin-left: 3px;
+  color:#516078;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.anc2:hover, .anc1:hover{
+  color:#516078;
+}
+
+
+/* ...............Form2........................ */
+
+.forgotpw{
+  display: none;
+  margin-left: 4vw;
+  margin-top: 8vh;
+  position: absolute;
+}
+
+.fptop p, .rfatop p{
+  display:inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1C2C42;
+  line-height: 16px;
+}
+
+.lockimage, .rfaimage{
+  display: inline-block;
+  width:15px;
+  height:22px;
+}
+
+
+/* ...............Form3........................ */
+
+
+.magic{
+  display: none;
+  margin-left: 4vw;
+  margin-top: 8vh;
+  position: absolute;
+}
+
+
+.para{
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C2C42;
+  line-height: 24px;
+  width:80%;
+}
+
+.mailspan{
+  font-weight: 600;
+}
+
+
+
+/* ...................Form4.................... */
+
+.rfora{
+  display:none;
+  position: absolute;
+  margin-left: 4vw;
+  margin-top: 2vh;
+}
+
+#inputEmail3::placeholder, #fullname::placeholder, #reason::placeholder{
+  color:rgba(21, 37, 66, 0.3);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+/* ...................Form5.................... */
+
+
+.admin{
+  display: none;
+  margin-left: 4vw;
+  margin-top: 8vh;
+  position: absolute;
+}
+
+.mailto{
+  color: #516078;
+  margin-left: 20px;
+}
+
+.mailto a{
+  color: #516078;
+  font-weight: 600;
+  text-decoration: underline;
+}
