@@ -88,27 +88,3 @@ $("#ask").click(function(){
     $(".admin").show();
     }
 });
-
-//
-//
-//
-// /* Request button */
-//
-// $("#ask").click(function(){
-//   const nm= $("#fullname").val();
-//   if(nm==""){
-//     $('#fullname').css('border-color','red');
-//     alert("Do not leave Name field empty");
-//   }
-//   const em = $('#inputEmail3').val();
-//   else if(em==""){
-//     $('#inputEmail3').css('border-color','red');
-//     alert("Do not leave Email field empty");
-//   }
-//   else{
-//     $('#fitname').text(em);
-//     $(".rfora").hide();
-//     $(".admin").show();
-//   }
-//
-// });
